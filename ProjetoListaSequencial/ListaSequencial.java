@@ -44,7 +44,12 @@ public class ListaSequencial implements TLista{
 	}
 
 	public Identificavel removerPorPos(int pos) throws Exception {
-		return null;
+		try {
+			pos;
+			return pos.removerPorId;
+		}catch(Exception e) {
+			return false;
+		}
 	}
 
 	public Identificavel buscar(long id) throws Exception {
@@ -57,7 +62,12 @@ public class ListaSequencial implements TLista{
 	}
 
 	public int posicao(Identificavel obj) throws Exception {
-		return 0;
+		try {
+			obj;
+			return obj;
+		}catch(Exception e) {
+			return false;
+		}
 	}
 
 	public boolean existe(long id) throws Exception {
@@ -70,11 +80,21 @@ public class ListaSequencial implements TLista{
 	}
 
 	public Identificavel primeiro() throws Exception {
-		return null;
+		try {
+			Identificavel;
+			return lista[0];
+		}catch(Exception e) {
+			return false;
+		}
 	}
 
 	public Identificavel ultimo() throws Exception {
-		return null;
+		try {
+			Identificavel;
+			return lista.length;
+		}catch(Exception e) {
+			return false;
+		}
 	}
 
 	public boolean isVazia() {
@@ -104,15 +124,15 @@ public class ListaSequencial implements TLista{
 	}
 
 	public Identificavel antecessor(Identificavel obj) throws Exception {
-		return null;
+		return obj-1;
 	}
 
 	public Identificavel sucessor(Identificavel obj) throws Exception {
-		return null;
+		return obj+1;
 	}
 
 	public Identificavel elemento(int pos) throws Exception {
-		return null;
+		return pos;
 	}
 
 }
